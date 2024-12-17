@@ -1,0 +1,378 @@
+@import url(https://fonts.googleapis.com/css2?family=Kanit&display=swap);/*Kanit*/
+@import url(https://fonts.googleapis.com/css2?family=Carter+One&display=swap);/*Carter One*/
+@import url(https://fonts.googleapis.com/css2?family=Kanit:wght@900&family=Righteous&display=swap);/*Righteous*/
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap);/*Josefin Sans*/
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap);/*Poppins*/
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65px 1fr;
+    height: 100vh;
+    
+}
+.navbar {
+    background-color: #1c8f6e;
+    color: #fff;
+    padding: 1em;
+    text-align: left; 
+    margin-top: -2px;
+
+}
+
+.navbar ul {
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
+    gap: 100px;
+    margin: auto;
+    padding: 20px;
+    opacity: 0.6;
+}
+
+.navbar li {
+    position: relative; 
+    margin-bottom: 10px; 
+    list-style: none;
+}
+
+.navbar a {
+    color: #fff;
+    display: block; 
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration:none;
+    text-transform: uppercase;
+    padding: 0 10px; 
+    margin-top: -12px;
+    
+}
+
+.navbar a:hover {
+    
+    background-color: #fff;
+
+    transition: 0.5s;
+    border-radius: 50px;
+}
+.navbar a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+.navbar li ul {
+    display: none; 
+    position: absolute; 
+    left: 0; 
+    top: 100%; 
+    margin-top: -2px;
+    z-index: 1; /* Ensure dropdown is above other content */
+}
+
+
+
+/*lu*/
+
+.lu1 {
+    text-align: center;
+    align-content: center;
+    font-size: 8rem;
+    font-family: Carter One, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: transparent;
+    letter-spacing: 2.5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    -webkit-text-stroke: #ffffff  2px;
+    text-shadow:  1px 1px #2c988b ;
+    
+}
+
+.lu2 {
+    text-align: left;
+    align-content: left;
+    font-size: 3rem;
+    font-family: "Carter One", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 130px;
+    letter-spacing:.2rem;
+    margin-top: -10px;
+    padding: 0;
+    -webkit-text-stroke:  #fafafa 1.5px;
+    margin-bottom: -50px;
+}
+
+.hotel{
+    text-align: left;
+    align-content: left;
+    font-size: 3rem;
+    font-family: "Carter One", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 130px;
+    letter-spacing:.2rem;
+    margin-top: -10px;
+    padding: 0;
+    -webkit-text-stroke:  #ffffff 1.5px;
+    margin-bottom: -50px;
+}
+
+.resort{
+    text-align: left;
+    align-content: left;
+    font-size: 3rem;
+    font-family: "Carter One", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 130px;
+    letter-spacing:.2rem;
+    margin-top: -10px;
+    padding: 0;
+    -webkit-text-stroke:  #ffffff 1.5px;
+    margin-bottom: -50px;
+}
+
+.vr{
+    text-align: left;
+    align-content: left;
+    font-size: 3rem;
+    font-family: "Carter One", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 130px;
+    letter-spacing:.2rem;
+    margin-top: -10px;
+    padding: 0;
+    -webkit-text-stroke:  #ffffff 1.5px;
+    margin-bottom: -50px;
+}
+
+.products{
+    text-align: left;
+    align-content: left;
+    font-size: 3rem;
+    font-family: "Carter One", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 130px;
+    letter-spacing:.2rem;
+    margin-top: -10px;
+    padding: 0;
+    -webkit-text-stroke:  #ffffff 1.5px;
+    margin-bottom: -50px;
+}
+
+.tourist{
+    text-align: left;
+    align-content: left;
+    font-size: 3rem;
+    font-family: "Carter One", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 130px;
+    letter-spacing:.2rem;
+    margin-top: -10px;
+    padding: 0;
+    -webkit-text-stroke:  #ffffff 1.5px;
+    margin-bottom: -50px;
+}
+
+
+
+
+.place-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+}
+
+.place-card {
+    width: 400px;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px black;
+    margin: 20px;
+    background-color: #9ee1d7ab;
+    text-align: center;
+}
+
+.place-img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: .5rem; 
+}
+
+.place-title {
+    font-family: Righteous;
+    text-transform: uppercase;
+    color: #bb0505b0;
+    margin-top: 0;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+ span {
+    color: #0517bbb0;
+    font-weight: 600;
+}
+
+.place-desc {
+    font-size: 1.3rem;
+    font-family: "Josefin Sans";
+    padding: 1rem; 
+    margin-top: -2rem;
+    text-align: justify;
+}
+
+
+
+
+/*ABOUT*/
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.about-card {
+    width: 80%;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 6px black;
+    margin: 20px;
+    background-color: #f6f1d3cc;
+    text-align: center;
+}
+
+
+.about-img {
+    width: 500px;
+    height: 0px;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: .5rem; 
+}
+
+.about-title {
+    font-family: Righteous;
+    text-transform: uppercase;
+    color: #ff0000bd;
+    margin-top: 0;
+    padding: .5rem;
+    font-size: 4rem;
+}
+
+.about-desc {
+    font-size: 2rem;
+    font-family: "Josefin Sans";
+    padding: 2rem; 
+    margin-top: -2rem;
+    text-align: justify;
+}
+
+.about-btn {
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: .5em;
+    margin: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.about-card a:hover {
+    background-color: #e0e0e0;
+    font-weight: 500;
+    color: #0517bb;
+}
+
+/*ME*/
+
+
+.me-container {
+    width: 100%;
+    height: 100vh;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-box {
+    background: #f6f1d3da;
+    text-align: center;
+    padding: 70px 100px;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+    border: 4px solid rgba(0, 0, 0, 0.959);
+}
+
+.profile {
+    width: 200px;
+    border-radius: 50%;
+    background-color: #333;
+    padding: 6px;
+    margin-top: -30px;
+}
+
+.profile-bottom {
+    background: #333;
+    padding: 10px 0;
+    margin-right: -100px;
+    margin-left: -100px;
+    margin-bottom: -69px;
+    border-radius: 1.5rem;
+    border: 4px solid #F6F1D3;
+}
+
+.profile-box h3 {
+    color: #000000;
+    font-family: Josefin Sans;
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.profile-box h4 {
+    color: #000000;
+    font-family: Josefin Sans;
+    font-size: 1rem;
+    margin-top: -20px;
+}
+
+.profile-box p {
+    color: #F6F1D3;
+    font-size: 1.5rem;
+}
+
+.profile-bottom p {
+    font-family: Righteous;
+    letter-spacing: .1rem;
+}
+
+.socmed img {
+    width: 40px;
+    margin: 30px 10px;
+    cursor: pointer;
+}
+
+
+

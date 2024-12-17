@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css2?family=Kanit&display=swap);/*Kanit*/
+@import url(https://fonts.googleapis.com/css2?family=Carter+One&display=swap);/*Carter One*/
+@import url(https://fonts.googleapis.com/css2?family=Kanit:wght@900&family=Righteous&display=swap);/*Righteous*/
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap);/*Josefin Sans*/
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap);/*Poppins*/
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65px 1fr;
+    height: 100vh;
+    
+}
+.navbar {
+    background-color: #1c8f6e;
+    color: #fff;
+    padding: 1em;
+    text-align: left; 
+    margin-top: -2px;
+
+}
+
+.navbar ul {
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
+    gap: 100px;
+    margin: auto;
+    padding: 20px;
+    opacity: 0.6;
+}
+
+.navbar li {
+    position: relative; 
+    margin-bottom: 10px; 
+    list-style: none;
+}
+
+.navbar a {
+    color: #fff;
+    display: block; 
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration:none;
+    text-transform: uppercase;
+    padding: 0 10px; 
+    margin-top: -12px;
+    
+}
+
+.navbar a:hover {
+    
+    background-color: #fff;
+
+    transition: 0.5s;
+    border-radius: 50px;
+}
+.navbar a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+.navbar li ul {
+    display: none; 
+    position: absolute; 
+    left: 0; 
+    top: 100%; 
+    margin-top: -2px;
+    z-index: 1;
+}
+
+
+/* h1 */
+.lu1{
+    text-align: center;
+    font-size: 8rem;
+    font-family: Carter One;
+    color: #2c988b; 
+    letter-spacing: 3.0px;
+    margin-top: 180px;
+    margin-bottom: 50px;
+    -webkit-text-stroke:  #ffffff 2px;
+}
+
+/* h2 */
+.lu2{
+    text-align: center;
+    align-content: center;
+    font-size: 60px;
+    font-family: Carter One;
+    color: #2c988b; 
+    letter-spacing:.2rem;
+    margin-top: -50px;
+    margin-bottom: 200px;
+    padding: 0;
+    -webkit-text-stroke:  #ffffff 2px;
+    
+}
+
+.lu1:hover{
+    color: transparent;
+    transition: 0.1s;
+}
+
+.lu2:hover{
+    color: transparent;
+    transition: 0.1s;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    
+}
+
+a:hover::after{
+    width: 100%;
+}
